@@ -4,6 +4,7 @@
     "slug": "expo-firebase-login-google",
     "version": "1.0.0",
     "orientation": "portrait",
+    "privacy": "public",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -17,12 +18,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "<ID_GOOGLE_CREDENTIAL_IOS>"
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleSignIn":{
+          "reservedClientId": "<ID_GOOGLE_CREDENTIAL_ANDROID>"
+        }
       }
     },
     "web": {

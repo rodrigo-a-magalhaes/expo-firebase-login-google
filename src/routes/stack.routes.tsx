@@ -20,7 +20,7 @@ const AppRoutes: React.FC = () => (
       component={SignIn}
     />
     <stackRoutes.Screen
-      name="Registe"
+      name="Register"
       component={Register}
     />
     <stackRoutes.Screen
